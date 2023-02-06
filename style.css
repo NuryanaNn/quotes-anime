@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.ace{
+    background-image: url('aces.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lufy{
+    background-image: url('luffy.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4%;
+    align-items: center;
+}
+
+header nav .sci{
+    display: flex;  
+    list-style: none;
+    align-items: center;
+}
+
+header nav .sci li{
+    margin-right: 20px;
+}
+
+header nav i{
+    color: black;
+    font-size: 20px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.category{
+    padding: 10px 15px;
+    background-color: orange;
+    border: none;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+/* Content Anime */
+.quotesTitle, .animeListTitle{
+    text-align: center;
+}
+
+.quotesTitle h3, .animeListTitle h3{
+    font-size: 35px;
+}
+
+
+/* Random Quotes */
+.randomQuotes{
+    margin-top: 70px;
+}
+
+.randomQuotes .card{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    box-shadow: 14px 15px 11px -12px rgba(0,0,0,0.51);
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+}
+
+.randomQuotes .card:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #e8e8e8;
+    transition: 1s;
+}
+
+.randomQuotes .card:hover:after{
+    width: 100%;
+    transition: 1s;
+}
+
+.randomQuotes .card img{
+    width: 200px;
+    margin-right: 20px;
+    transition: 1s;
+    z-index: 10;
+}
+
+.randomQuotes .card:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.randomQuotes .card .randomText{
+    width: 100%;
+    z-index: 10;
+}
+
+.randomQuotes .card .quotes{
+    width: 100%;
+    padding: 10px;
+}
+
+.animeCharacter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+/* List Anime */
+.listanime{
+    padding: 0 4%;
+}
+
+.contentAnimeList{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 50px;
+    margin-top: 70px;
+}
+
+.contentAnimeList .card{
+    display: flex;
+    width: 300px;
+    padding: 40px 15px;
+    position: relative;
+    align-items: center;
+    height: 250px;
+    box-shadow: 14px 15px 11px -12px rgba(0,0,0,0.51);
+}
+
+.contentAnimeList .card .teksAnime{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.contentAnimeList .card .teksAnime h3{
+    min-height: 20px;
+}
+
+.contentAnimeList .card .images{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.contentAnimeList .card .images img{
+    width: 100%;
+    height: 100%;
+}
+
+.contentAnimeList .card .teksAnime{
+    margin-left: 20px;
+}
+
+.view{
+    text-decoration: none;
+    color: blue;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.view span{
+    margin-left: 10px;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Anime */
+.anime{
+    padding: 0 4%;
+}
+
+.animeQuotes{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.animeQuotes .card{
+    box-shadow: 14px 15px 11px -12px rgba(0,0,0,0.51);
+    width: 300px;
+}
+
+.animeQuotes .card img{
+    width: 100%;
+    height: 100%;
+}
+
+.animeQuotes .card .image{
+    height: 150px;
+}
+
+.animeQuotes .card .animeText h3{
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.animeQuotes .card button{
+    width: 100%;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 20px;
+}
